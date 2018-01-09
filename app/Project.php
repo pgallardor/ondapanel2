@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Eloquent {
     protected $connection = 'mongodb';
-    protected $collection = 'project';
+    protected $collection = 'projects';
     
     public function user() {
         return $this->hasOne('App\Creator', '_id', 'user_id'); //change by with user_id when DB is updated

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Creator extends Eloquent {
     protected $connection = 'mongodb';
-    protected $collection = 'user';
+    protected $collection = 'users';
     
     public function profile(){
         return $this->hasOne('App\Profile', '_id', 'profile_id');
