@@ -41,6 +41,8 @@
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" name="password">
             </div>
+            
+            {{ csrf_field() }}
 
             <button class="btn btn-default-sm" type="submit">
                 <i class="fa fa-gear"> Entrar</i>
